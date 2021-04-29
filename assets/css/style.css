@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap');
 @font-face {
-    font-family: 'Larish1';
+    font-family: 'Larish';
     src: url(../fonts/LarishNeueSemibold.woff);
 }
-@font-face {
-    font-family: 'Larish2';
-    src: url(../fonts/Larish\ Neue\ Semibold.woff2);
-}
-
 :root {
     --col-white: #fff;
     --col-black: #000;
@@ -20,24 +15,17 @@
 }
 body {
     color: var(--col-white);
-    font-family: 'Larish1';
+    font-family: 'Larish';
     font-size: 18px;
 }
-h2 {
+a, h2, .intro p, .stuck p, footer h3 {
     font-family: var(--font-work);
 }
 .big-fontsize {
     font-size: 5.8em;
 }
-header h1:nth-of-type(2) {
-    color: var(--col-black);
-    -webkit-text-fill-color: var(--col-black); 
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: var(--col-white);
-}
 a {
     color: var(--col-white);
-    font-family: var(--font-work);
     font-size: 1.3em;
     text-decoration: none;
 }
@@ -59,6 +47,12 @@ header {
     position: relative;
     padding: 0 8%;
 }
+header h1:nth-of-type(2) {
+    color: var(--col-black);
+    -webkit-text-fill-color: var(--col-black); 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--col-white);
+}
 .container {
     display: flex;
     justify-content: center;
@@ -72,7 +66,6 @@ header {
     line-height: 9vh;
 }
 .intro p {
-    font-family: var(--font-work);
     margin: 5vh 0;
 }
 nav {
@@ -119,7 +112,6 @@ li:nth-of-type(odd) {
     position: relative;
 }
 .stuck p {
-    font-family: var(--font-work);
     line-height: 2em;
 }
 .stuck h1, .stuck p {
@@ -255,13 +247,12 @@ li:nth-of-type(odd) {
 
 footer {
     background: #000;
-    padding: 15vh 10% 5vh 8%;
     overflow: hidden;
     position: relative;
+    padding: 15vh 10% 5vh 8%;
 }
 footer h3 {
     font-size: 1em;
-    font-family: var(--font-work);
 }
 footer p {
     font-size: 2em;
@@ -408,6 +399,14 @@ footer span {
         top: 60px;
     }
     @-webkit-keyframes move { 
+        0%, 100%{ 
+           transform: translate(-20%); 
+        } 
+        50% {
+            transform: translateX(0%); 
+        } 
+    }
+    @keyframes move { 
         0%, 100%{ 
            transform: translate(-20%); 
         } 
