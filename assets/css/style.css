@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap');
+@font-face {
+    font-family: 'Larish1';
+    src: url(../fonts/LarishNeueSemibold.woff);
+}
+@font-face {
+    font-family: 'Larish2';
+    src: url(../fonts/Larish\ Neue\ Semibold.woff2);
+}
+
+:root {
+    --col-white: #fff;
+    --col-black: #000;
+    --font-work: 'Work Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: var(--col-white);
+    font-family: 'Larish1';
+    font-size: 18px;
+}
+h2 {
+    font-family: var(--font-work);
+}
+.big-fontsize {
+    font-size: 5.8em;
+}
+header h1:nth-of-type(2) {
+    color: var(--col-black);
+    -webkit-text-fill-color: var(--col-black); 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--col-white);
+}
+a {
+    color: var(--col-white);
+    font-family: var(--font-work);
+    font-size: 1.3em;
+    text-decoration: none;
+}
+.button {
+    padding:2vh 1.5em;
+    border: 1px solid var(--col-white);
+}
+.button:hover {
+    color: var(--col-black);
+    background: var(--col-white);
+}
+
+/* HEADER  */
+
+header {
+    background: var(--col-black);
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    padding: 0 8%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.line {
+    border-left: 2px solid gray;
+    height: 25vh;
+}
+.intro h1 {
+    font-size: 5em;
+    line-height: 9vh;
+}
+.intro p {
+    font-family: var(--font-work);
+    margin: 5vh 0;
+}
+nav {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.intro p:nth-of-type(2) {
+    margin-bottom: 20vh;
+}
+.logo {
+    width: 3em;
+}
+
+
+/* SECTION - Wildfires */
+
+.wildfires {
+    background: url(../img/map.svg) 100% 83% / contain no-repeat var(--col-black);
+    background-size: 38%;
+}
+.info {
+    padding: 10vh 8% 15vh;
+}
+.data {
+    padding: 0 0 20vh 8%;
+}
+li {
+    list-style-type: none;
+}
+li:nth-of-type(odd) {
+    font-family: var(--font-work);
+    font-size: 1.2em;
+    margin: 3vh 0 1vh;
+}
+
+
+/* SECTION - Stuck in the middle */
+
+.stuck {
+    color: var(--col-black);
+}
+.stuck1 {
+    position: relative;
+}
+.stuck p {
+    font-family: var(--font-work);
+    line-height: 2em;
+}
+.stuck h1, .stuck p {
+    margin: 0 30%;
+}
+.stuck1 {
+    padding: 50vh 0 90vh;
+}
+.stuck img {
+    position: absolute;
+}
+.stuck-pic1 {
+    width: 25vw;
+    top: -12vh;
+    right: 10%;
+}
+.stuck-pic2 {
+    width: 20vw;
+    top: 18vw;
+    left: 5%;
+}
+.stuck-pic3 {
+    width: 23vw;
+    top: 50vw;
+    right: 0px;
+}
+.stuck-pic4 {
+    width: 25vw;
+    bottom: 40vh;
+    left: 15%;
+}
+.stuck2 {
+    position: relative;
+    padding-bottom: 40vh;
+}
+.stuck-pic5 {
+    width: 25vw;
+    top: -25vw;
+    right: 10%;
+}
+.stuck-pic6 {
+    width: 20vw;
+    top: -5vh;
+    left: 0px;
+}
+.stuck-pic7 {
+    width: 32vw;
+    bottom: -8vh;
+    right: 20%;
+    z-index: 1;
+}
+
+
+/* SECTION - The golden bear  */
+
+.golden-bear {
+    background: var(--col-black);
+    padding: 20vh 5% 90vh 8%;
+}
+.bear {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bear h2 {
+    font-size: 1.2em;
+    padding-top: 4vh;
+}
+.heading {
+    width: 35%;
+}
+.artist {
+    width: 48%;
+}
+.artist p {
+    font-size: 1.7em;
+}
+.golden-bear img {
+    position: absolute;
+}
+.golden-pic1 {
+    width: 56vw;
+    bottom: -25vh;
+    left: 10%;
+}
+.golden-pic2 {
+    width: 26vw;
+    bottom: -6vh;
+    right: 15%;
+    z-index: 1;
+}
+
+
+/* SECTION - The poppy bear */
+
+.circle {
+    width: 32vw;
+    position: absolute;
+    top: -15vh;
+    right: -10%;
+    animation: circle 10s linear infinite;
+}
+@keyframes circle { 
+    from {transform: rotate(0deg) } 
+    to {transform: rotate(360deg) } 
+    }
+
+.poppy-bear {
+    color: var(--col-black);
+    padding: 45vh 5% 130vh 8%;
+    overflow: hidden;
+}
+.poppy-bear img {
+    position: absolute;
+}
+.poppy-pic1 {
+    width: 28vw;
+    bottom: 30vh;
+    left: 17%;
+    z-index: 1;
+}
+.poppy-pic2 {
+    width: 55vw;
+    bottom: 15vh;
+    right: 10%;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #000;
+    padding: 15vh 10% 0 8%;
+    overflow: hidden;
+    position: relative;
+}
+footer h3 {
+    font-size: 1em;
+    font-family: var(--font-work);
+}
+footer p {
+    font-size: 2em;
+}
+.join-us {
+    width: 45%;
+    padding: 4vh 0 25vh;
+}
+.join-us h3 {
+    padding-bottom: 3vh;
+}
+.footbutton {
+    display: inline-block;
+    margin-top: 4vh;
+}
+.social-media {
+    line-height: 5vh;
+}
+.social-media img {
+    width: 23px;
+}
+.footer-right {
+    text-align: right;
+}
+.footer-right img {
+    width: 100px;
+}
+footer h1 {
+    color: var(--col-black);
+    font-size: 5em;
+    white-space: nowrap;
+    animation: move 5s linear infinite;
+}
+footer span {
+    color: var(--col-white);
+    -webkit-text-fill-color: var(--col-white); 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--col-black);
+}
+.footer-animation {
+    background: var(--col-white);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0px;
+    left: -5%;
+}
+@keyframes move { 
+    0%, 100%{ 
+       transform: translate(-10%); 
+    } 
+    50% {
+        transform: translateX(25%); 
+    } 
+}
+
+
+@media (max-width: 576px) {
+    body {
+        font-size: 9px;
+    }
+    p {
+        font-size: 2em;
+    }
+    .intro h1 {
+        font-size: 4.4em;
+    }
+    .logo {
+        width: 7em;
+    }
+    .big-fontsize {
+        font-size: 3em;
+    }
+    .data {
+        text-align: center;
+    }
+    .data li:nth-of-type(odd) {
+        font-size: 2em;
+    }
+    .wildfires {
+        background-size: 80%;
+    }
+    .stuck img {
+        width: 55%;
+    }
+    .stuck h1, .stuck p {
+        margin: 0 10%;
+    }
+    .stuck1 {
+        padding: 60vh 0 80vh;
+    }
+    .stuck-pic1 {
+        top: -4vh;
+    }
+    .stuck-pic2 {
+        top: 25vw;
+    }
+    .stuck-pic3 {
+        top: 60vw;
+    }
+    .stuck-pic4 { 
+        bottom: 45vh;
+        left: 15%;
+    }
+    .stuck-pic5 {
+        top: -90vw;
+        right: 10%;
+    }
+    .stuck-pic6 {
+        top: -28vh;
+        left: 0px;
+    }
+    .stuck-pic7 {
+        bottom: -3vh;
+    }
+    .stuck2 {
+        padding-bottom: 30vh;
+    }
+    .bear {
+        display: block;
+    }
+    .bear h2 {
+        font-size: 2em;
+    }
+    .bear p {
+        font-size: 2.4em;
+    }
+    .bear div {
+        width: 80%;
+    }
+    .bear h1 {
+        padding: 20px 0;
+    } 
+    .golden-bear, .poppy-bear {
+        padding: 10vh 5% 10vh 8%;
+    }
+    .golden-bear img, .poppy-bear img {
+        position: unset;
+    }
+    .artist h2 {
+        padding-bottom: 10vh;
+    }
+    footer h3 {
+        font-size: 2em;
+        font-family: var(--font-work);
+    }
+    footer p {
+        font-size: 3em;
+    }
+    .join-us {
+        width: 90%;
+        padding: 10vh 0 10vh;
+    }
+    .footer-animation {
+        transform: rotate(5deg);
+        top: 60px;
+    }
+    @keyframes move { 
+        0%, 100%{ 
+           transform: translate(-20%); 
+        } 
+        50% {
+            transform: translateX(0%); 
+        } 
+    }
+    
+
+}
