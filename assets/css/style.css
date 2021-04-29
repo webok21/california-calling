@@ -221,8 +221,13 @@ li:nth-of-type(odd) {
     position: absolute;
     top: -15vh;
     right: -10%;
-    animation: circle 10s linear infinite;
+    -webkit-animation: circle 10s linear infinite;
+            animation: circle 10s linear infinite;
 }
+@-webkit-keyframes circle { 
+    from {transform: rotate(0deg) } 
+    to {transform: rotate(360deg) } 
+    }
 @keyframes circle { 
     from {transform: rotate(0deg) } 
     to {transform: rotate(360deg) } 
@@ -291,7 +296,8 @@ footer h1 {
     color: var(--col-black);
     font-size: 5em;
     white-space: nowrap;
-    animation: move 5s linear infinite;
+    -webkit-animation: move 5s linear infinite;
+            animation: move 5s linear infinite;
 }
 footer span {
     color: var(--col-white);
@@ -305,6 +311,14 @@ footer span {
     position: absolute;
     top: 0px;
     left: -5%;
+}
+@-webkit-keyframes move { 
+    0%, 100%{ 
+       transform: translate(-10%); 
+    } 
+    50% {
+        transform: translateX(25%); 
+    } 
 }
 @keyframes move { 
     0%, 100%{ 
@@ -415,6 +429,14 @@ footer span {
     .footer-animation {
         transform: rotate(5deg);
         top: 60px;
+    }
+    @-webkit-keyframes move { 
+        0%, 100%{ 
+           transform: translate(-20%); 
+        } 
+        50% {
+            transform: translateX(0%); 
+        } 
     }
     @keyframes move { 
         0%, 100%{ 
