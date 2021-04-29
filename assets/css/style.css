@@ -362,34 +362,14 @@ footer span {
         margin: 0 10%;
     }
     .stuck1 {
-        padding: 60vh 0 80vh;
+        padding: 5vh 0 5vh;
     }
-    .stuck-pic1 {
-        top: -4vh;
-    }
-    .stuck-pic2 {
-        top: 25vw;
-    }
-    .stuck-pic3 {
-        top: 60vw;
-    }
-    .stuck-pic4 { 
-        bottom: 45vh;
-        left: 15%;
-    }
-    .stuck-pic5 {
-        top: -90vw;
-        right: 10%;
-    }
-    .stuck-pic6 {
-        top: -28vh;
-        left: 0px;
-    }
-    .stuck-pic7 {
-        bottom: -3vh;
+    .stuck img {
+        position: unset;
+        margin: 2vh 10%;
     }
     .stuck2 {
-        padding-bottom: 30vh;
+        padding-bottom: 5vh;
     }
     .bear {
         display: block;
