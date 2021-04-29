@@ -348,6 +348,7 @@ footer span {
     }
     .data li:nth-of-type(odd) {
         font-size: 2em;
+        margin: 5vh 0 1vh;
     }
     .wildfires {
         background-size: 80%;
