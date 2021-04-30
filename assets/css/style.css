@@ -9,7 +9,6 @@
     --font-work: 'Work Sans', sans-serif;
 }
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -344,9 +343,6 @@ footer span {
     .wildfires {
         background-size: 80%;
     }
-    .stuck img {
-        width: 55%;
-    }
     .stuck h1, .stuck p {
         margin: 0 10%;
     }
@@ -354,6 +350,7 @@ footer span {
         padding: 5vh 0 5vh;
     }
     .stuck img {
+        width: 55%;
         position: unset;
         margin: 2vh 10%;
     }
